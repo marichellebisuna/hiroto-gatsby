@@ -128,7 +128,7 @@ const Footer = () => {
                         <i class="fab fa-tripadvisor"></i>
                       </a>
                       <a href="#">
-                        <i className="fab fa-map-o"></i>
+                        <i className="far fa-map"></i>
                       </a>
                       <a href="#">
                         <i className="fab fa-dribbble"></i>
@@ -150,11 +150,14 @@ const Footer = () => {
                   <p>
                     Copyright &copy;{" "}
                     <script>document.write(new Date().getFullYear());</script>{" "}
-                    All rights reserved | This template is made with{" "}
-                    <i className="fa fa-heart" aria-hidden="true"></i> by{" "}
-                    <a href="https://colorlib.com" target="_blank">
-                      Colorlib
-                    </a>
+                    All rights reserved.{" "}
+                    <span className="hidden">
+                      This template is made with{" "}
+                      <i className="fa fa-heart" aria-hidden="true"></i> by{" "}
+                      <a href="https://colorlib.com" target="_blank">
+                        Colorlib
+                      </a>
+                    </span>
                   </p>
                 </div>
                 {/* <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> */}
@@ -181,7 +184,7 @@ export default Footer
 const FooterWrapper = styled.div`
   .footer {
     padding-top: 60px;
-    background: url(img/footer-bg.jpg) no-repeat;
+    background: url(img/footer-bg.jpg);
   }
 
   .logo__carousel {
@@ -384,5 +387,8 @@ const FooterWrapper = styled.div`
   .footer__copyright__links li a {
     font-size: 16px;
     color: #777c81;
+  }
+  .hidden {
+    display: none;
   }
 `
